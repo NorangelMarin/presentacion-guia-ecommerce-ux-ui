@@ -420,46 +420,99 @@
         <div class="content">
             <div class="section-pill reveal">09 · Método · Artefactos</div>
             <h2 class="reveal" style="font-family:var(--font-display);font-size:clamp(1.92rem,3.6vw,2.88rem);font-weight:700;margin:0 0 1rem;">Artefactos Generados</h2>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.6rem;">
-                <div class="reveal" style="background:var(--color-glass-bg);border:1px solid var(--color-glass-border);border-radius:10px;padding:0.7rem 1rem;display:flex;align-items:center;gap:0.8rem;">
-                    <span style="font-size:1.44rem;">👤</span>
-                    <span style="font-size:1rem;color:var(--color-text-secondary);"><strong style="color:var(--color-text);">1. Protopersonas</strong></span>
+            <!-- Fila superior: 3 Fases -->
+            <div class="reveal" style="display:grid;grid-template-columns:repeat(3, 1fr);gap:1.2rem;width:100%;">
+                <!-- Card 1: Empatizar -->
+                <div style="background:linear-gradient(145deg, rgba(255,245,235,0.04), rgba(255,245,235,0.01));border:1px solid var(--color-glass-border);border-top:3px solid #F5831F;border-radius:14px;padding:1.2rem;box-shadow:0 8px 32px rgba(0,0,0,0.15);backdrop-filter:blur(8px);">
+                    <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:1rem;">
+                        <span style="font-size:1.8rem;line-height:1;">🔍</span>
+                        <span style="font-size:1.15rem;font-weight:700;color:#F5831F;letter-spacing:0.05em;text-transform:uppercase;">Empatizar</span>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+                        <div style="display:flex;align-items:center;gap:0.6rem;background:rgba(0,0,0,0.25);padding:0.6rem 0.8rem;border-radius:8px;border:1px solid rgba(255,255,255,0.03);">
+                            <span style="font-size:1.1rem;">👤</span>
+                            <span style="font-size:0.92rem;color:var(--color-text);font-weight:500;">1. Protopersonas</span>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:0.6rem;background:rgba(0,0,0,0.25);padding:0.6rem 0.8rem;border-radius:8px;border:1px solid rgba(255,255,255,0.03);">
+                            <span style="font-size:1.1rem;">🧠</span>
+                            <span style="font-size:0.92rem;color:var(--color-text);font-weight:500;">2. Mapa de Empatía</span>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:0.6rem;background:rgba(0,0,0,0.25);padding:0.6rem 0.8rem;border-radius:8px;border:1px solid rgba(255,255,255,0.03);">
+                            <span style="font-size:1.1rem;">🔄</span>
+                            <span style="font-size:0.92rem;color:var(--color-text);font-weight:500;">3. Flujo As-Is</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="reveal" style="background:var(--color-glass-bg);border:1px solid var(--color-glass-border);border-radius:10px;padding:0.7rem 1rem;display:flex;align-items:center;gap:0.8rem;">
-                    <span style="font-size:1.44rem;">🧠</span>
-                    <span style="font-size:1rem;color:var(--color-text-secondary);"><strong style="color:var(--color-text);">2. Mapa de Empatía</strong></span>
+
+                <!-- Card 2: Definir -->
+                <div style="background:linear-gradient(145deg, rgba(255,245,235,0.04), rgba(255,245,235,0.01));border:1px solid var(--color-glass-border);border-top:3px solid #2A7FBC;border-radius:14px;padding:1.2rem;box-shadow:0 8px 32px rgba(0,0,0,0.15);backdrop-filter:blur(8px);">
+                    <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:1rem;">
+                        <span style="font-size:1.8rem;line-height:1;">🎯</span>
+                        <span style="font-size:1.15rem;font-weight:700;color:#2A7FBC;letter-spacing:0.05em;text-transform:uppercase;">Definir</span>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+                        <div style="display:flex;align-items:center;gap:0.6rem;background:rgba(0,0,0,0.25);padding:0.6rem 0.8rem;border-radius:8px;border:1px solid rgba(255,255,255,0.03);">
+                            <span style="font-size:1.1rem;">🗺️</span>
+                            <span style="font-size:0.92rem;color:var(--color-text);font-weight:500;">4. Service Blueprint</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="reveal" style="background:var(--color-glass-bg);border:1px solid var(--color-glass-border);border-radius:10px;padding:0.7rem 1rem;display:flex;align-items:center;gap:0.8rem;">
-                    <span style="font-size:1.44rem;">🔄</span>
-                    <span style="font-size:1rem;color:var(--color-text-secondary);"><strong style="color:var(--color-text);">3. Flujo As-Is</strong></span>
+
+                <!-- Card 3: Idear -->
+                <div style="background:linear-gradient(145deg, rgba(255,245,235,0.04), rgba(255,245,235,0.01));border:1px solid var(--color-glass-border);border-top:3px solid #4A9E5C;border-radius:14px;padding:1.2rem;box-shadow:0 8px 32px rgba(0,0,0,0.15);backdrop-filter:blur(8px);">
+                    <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:1rem;">
+                        <span style="font-size:1.8rem;line-height:1;">💡</span>
+                        <span style="font-size:1.15rem;font-weight:700;color:#4A9E5C;letter-spacing:0.05em;text-transform:uppercase;">Idear</span>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+                        <div style="display:flex;align-items:center;gap:0.6rem;background:rgba(0,0,0,0.25);padding:0.6rem 0.8rem;border-radius:8px;border:1px solid rgba(255,255,255,0.03);">
+                            <span style="font-size:1.1rem;">✨</span>
+                            <span style="font-size:0.92rem;color:var(--color-text);font-weight:500;">5. Inspiring Service</span>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:0.6rem;background:rgba(0,0,0,0.25);padding:0.6rem 0.8rem;border-radius:8px;border:1px solid rgba(255,255,255,0.03);">
+                            <span style="font-size:1.1rem;">🧭</span>
+                            <span style="font-size:0.92rem;color:var(--color-text);font-weight:500;">6. Mapa de Contenidos</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="reveal" style="background:var(--color-glass-bg);border:1px solid var(--color-glass-border);border-radius:10px;padding:0.7rem 1rem;display:flex;align-items:center;gap:0.8rem;">
-                    <span style="font-size:1.44rem;">🗺️</span>
-                    <span style="font-size:1rem;color:var(--color-text-secondary);"><strong style="color:var(--color-text);">4. Service Blueprint</strong></span>
+            </div>
+
+            <!-- Fila inferior: 2 Fases centradas -->
+            <div class="reveal" style="display:grid;grid-template-columns:repeat(2, 1fr);gap:1.2rem;width:66%;margin:1.2rem auto 0;">
+                <!-- Card 4: Prototipar -->
+                <div style="background:linear-gradient(145deg, rgba(255,245,235,0.04), rgba(255,245,235,0.01));border:1px solid var(--color-glass-border);border-top:3px solid #2A7FBC;border-radius:14px;padding:1.2rem;box-shadow:0 8px 32px rgba(0,0,0,0.15);backdrop-filter:blur(8px);">
+                    <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:1rem;">
+                        <span style="font-size:1.8rem;line-height:1;">🛠️</span>
+                        <span style="font-size:1.15rem;font-weight:700;color:#2A7FBC;letter-spacing:0.05em;text-transform:uppercase;">Prototipar</span>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+                        <div style="display:flex;align-items:center;gap:0.6rem;background:rgba(0,0,0,0.25);padding:0.6rem 0.8rem;border-radius:8px;border:1px solid rgba(255,255,255,0.03);">
+                            <span style="font-size:1.1rem;">📐</span>
+                            <span style="font-size:0.92rem;color:var(--color-text);font-weight:500;">7. Wireframe</span>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:0.6rem;background:rgba(0,0,0,0.25);padding:0.6rem 0.8rem;border-radius:8px;border:1px solid rgba(255,255,255,0.03);">
+                            <span style="font-size:1.1rem;">🔗</span>
+                            <span style="font-size:0.92rem;color:var(--color-text);font-weight:500;">8. Wireframe Mapping</span>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:0.6rem;background:rgba(0,0,0,0.25);padding:0.6rem 0.8rem;border-radius:8px;border:1px solid rgba(255,255,255,0.03);">
+                            <span style="font-size:1.1rem;">🎨</span>
+                            <span style="font-size:0.92rem;color:var(--color-text);font-weight:500;">9. Prototipo interactivo</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="reveal" style="background:var(--color-glass-bg);border:1px solid var(--color-glass-border);border-radius:10px;padding:0.7rem 1rem;display:flex;align-items:center;gap:0.8rem;">
-                    <span style="font-size:1.44rem;">✨</span>
-                    <span style="font-size:1rem;color:var(--color-text-secondary);"><strong style="color:var(--color-text);">5. Inspiring Service</strong></span>
-                </div>
-                <div class="reveal" style="background:var(--color-glass-bg);border:1px solid var(--color-glass-border);border-radius:10px;padding:0.7rem 1rem;display:flex;align-items:center;gap:0.8rem;">
-                    <span style="font-size:1.44rem;">🧭</span>
-                    <span style="font-size:1rem;color:var(--color-text-secondary);"><strong style="color:var(--color-text);">6. Mapa de Contenidos</strong></span>
-                </div>
-                <div class="reveal" style="background:var(--color-glass-bg);border:1px solid var(--color-glass-border);border-radius:10px;padding:0.7rem 1rem;display:flex;align-items:center;gap:0.8rem;">
-                    <span style="font-size:1.44rem;">📐</span>
-                    <span style="font-size:1rem;color:var(--color-text-secondary);"><strong style="color:var(--color-text);">7. Wireframe</strong></span>
-                </div>
-                <div class="reveal" style="background:var(--color-glass-bg);border:1px solid var(--color-glass-border);border-radius:10px;padding:0.7rem 1rem;display:flex;align-items:center;gap:0.8rem;">
-                    <span style="font-size:1.44rem;">🔗</span>
-                    <span style="font-size:1rem;color:var(--color-text-secondary);"><strong style="color:var(--color-text);">8. Wireframe Mapping</strong></span>
-                </div>
-                <div class="reveal" style="background:var(--color-glass-bg);border:1px solid var(--color-glass-border);border-radius:10px;padding:0.7rem 1rem;display:flex;align-items:center;gap:0.8rem;">
-                    <span style="font-size:1.44rem;">🎨</span>
-                    <span style="font-size:1rem;color:var(--color-text-secondary);"><strong style="color:var(--color-text);">9. Prototipo interactivo</strong></span>
-                </div>
-                <div class="reveal" style="background:var(--color-glass-bg);border:1px solid var(--color-glass-border);border-radius:10px;padding:0.7rem 1rem;display:flex;align-items:center;gap:0.8rem;">
-                    <span style="font-size:1.44rem;">📊</span>
-                    <span style="font-size:1rem;color:var(--color-text-secondary);"><strong style="color:var(--color-text);">10. Matriz de evaluación heurística</strong></span>
+
+                <!-- Card 5: Evaluar -->
+                <div style="background:linear-gradient(145deg, rgba(255,245,235,0.04), rgba(255,245,235,0.01));border:1px solid var(--color-glass-border);border-top:3px solid #F5831F;border-radius:14px;padding:1.2rem;box-shadow:0 8px 32px rgba(0,0,0,0.15);backdrop-filter:blur(8px);">
+                    <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:1rem;">
+                        <span style="font-size:1.8rem;line-height:1;">✅</span>
+                        <span style="font-size:1.15rem;font-weight:700;color:#F5831F;letter-spacing:0.05em;text-transform:uppercase;">Evaluar</span>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:0.6rem;">
+                        <div style="display:flex;align-items:center;gap:0.6rem;background:rgba(0,0,0,0.25);padding:0.6rem 0.8rem;border-radius:8px;border:1px solid rgba(255,255,255,0.03);">
+                            <span style="font-size:1.1rem;">📊</span>
+                            <span style="font-size:0.92rem;color:var(--color-text);font-weight:500;">10. Matriz de evaluación heurística</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -620,8 +673,19 @@
         <div class="content">
             <div class="section-pill reveal">09 · Método · Artefactos · Prototipo interactivo</div>
             <h2 class="reveal" style="font-family:var(--font-display);font-size:clamp(1.56rem,3vw,2.28rem);font-weight:700;margin:0 0 0.8rem;">Componentes UI</h2>
-            <div class="reveal" style="width:100%;display:flex;justify-content:center;">
-                <img src="imagenes/Componentes.png" alt="Componentes UI" style="width:auto;max-width:100%;max-height:65vh;display:block;border-radius:16px;margin:0 auto;box-shadow:0 8px 30px rgba(0,0,0,0.12);">
+            <div class="reveal" style="width:116%;margin-left:-8%;display:grid;grid-template-columns:repeat(6, 1fr);gap:1rem;align-items:start;">
+                <!-- Imagen 1 -->
+                <img src="imagenes/botones.png" alt="Botones" style="width:100%;object-fit:contain;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.15);border:1px solid var(--color-glass-border);">
+                <!-- Imagen 2 -->
+                <img src="imagenes/formularios.png" alt="Formularios" style="width:100%;object-fit:contain;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.15);border:1px solid var(--color-glass-border);">
+                <!-- Imagen 3 -->
+                <img src="imagenes/cards.png" alt="Cards" style="width:100%;object-fit:contain;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.15);border:1px solid var(--color-glass-border);">
+                <!-- Imagen 4 -->
+                <img src="imagenes/alertas.png" alt="Alertas" style="width:100%;object-fit:contain;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.15);border:1px solid var(--color-glass-border);">
+                <!-- Imagen 5 -->
+                <img src="imagenes/menus.png" alt="Menús" style="width:100%;object-fit:contain;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.15);border:1px solid var(--color-glass-border);">
+                <!-- Imagen 6 -->
+                <img src="imagenes/proceso.png" alt="Proceso" style="width:100%;object-fit:contain;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.15);border:1px solid var(--color-glass-border);">
             </div>
         </div>
     </div>
