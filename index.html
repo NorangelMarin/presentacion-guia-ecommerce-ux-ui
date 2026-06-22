@@ -721,7 +721,7 @@
                         <div style="color:var(--color-accent-3);font-weight:700;font-size:1.14rem;margin-bottom:0.35rem;">Innovación: Modo Guía</div>
                         <p style="font-size:1rem;color:var(--color-text-secondary);margin:0;line-height:1.65;">Implementación de un entorno de <strong style="color:var(--color-text);">aprendizaje asistido</strong> que transforma la plataforma transaccional en una guía interactiva de buenas prácticas UX en tiempo real.</p>
 	<div class="reveal" style="margin-top:1.8rem;display:flex;justify-content:center;">
-                <a href="#" target="_blank" class="video-button" 
+                <a href="#" onclick="openVideoModal(event)" class="video-button" 
                    style="display:inline-flex;align-items:center;gap:0.65rem;padding:0.8rem 1.35rem;border-radius:999px;
                           background:linear-gradient(135deg,rgba(245,131,31,0.12),rgba(245,131,31,0.32));
                           border:1px solid rgba(245,131,31,0.65);color:#fff;
@@ -1036,6 +1036,45 @@
     document.querySelectorAll('.particle-canvas-ambient').forEach(c => window.initParticles(c, {interactive:false,count:18}));
 
     try { animateSlide(document.querySelector('.slide.active')); } catch(e) {}
+    window.openVideoModal = function(e) {
+        if(e) e.preventDefault();
+        const modal = document.getElementById('videoModal');
+        const content = document.getElementById('videoModalContent');
+        modal.style.display = 'flex';
+        // Force reflow
+        void modal.offsetWidth;
+        modal.style.opacity = '1';
+        content.style.transform = 'scale(1)';
+    };
+    
+    window.closeVideoModal = function() {
+        const modal = document.getElementById('videoModal');
+        const content = document.getElementById('videoModalContent');
+        const video = document.getElementById('demoVideo');
+        modal.style.opacity = '0';
+        content.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            modal.style.display = 'none';
+            if(video) {
+                video.pause();
+                video.currentTime = 0;
+            }
+        }, 300);
+    };
 </script>
+
+<!-- Video Modal -->
+<div id="videoModal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;">
+    <div style="position:relative;width:90%;max-width:1000px;background:var(--color-surface);border:1px solid var(--color-glass-border);border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,0.5);overflow:hidden;transform:scale(0.95);transition:transform 0.3s ease;" id="videoModalContent">
+        <button onclick="closeVideoModal()" style="position:absolute;top:15px;right:15px;background:var(--color-accent-1);color:#fff;border:none;width:36px;height:36px;border-radius:50%;font-size:1.6rem;cursor:pointer;z-index:10;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,0.3);line-height:1;padding-bottom:2px;">&times;</button>
+        <div style="padding:10px;">
+            <video id="demoVideo" controls style="width:100%;max-height:80vh;border-radius:8px;display:block;">
+                <source src="videos/demo app.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
